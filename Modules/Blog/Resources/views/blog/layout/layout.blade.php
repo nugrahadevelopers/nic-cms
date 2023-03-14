@@ -52,6 +52,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    {{-- Prism --}}
+    <link rel="stylesheet" href="{{ asset('assets/js/vendor/prism/prism.css') }}">
+
     @stack('css')
 </head>
 
@@ -63,6 +66,9 @@
 
     {{-- jQuery --}}
     <script src="{{ asset('assets/js/vendor/jquery/jquery-3.6.3.min.js') }}"></script>
+
+    {{-- Prism --}}
+    <script src="{{ asset('assets/js/vendor/prism/prism.js') }}"></script>
 
     {{-- This App Js --}}
     <script src="{{ asset('assets/js/module/blog/blog/layout/index.js') }}"></script>

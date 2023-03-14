@@ -572,3 +572,91 @@
             url("/public/assets/fonts/inter-v12-latin/inter-v12-latin-900.svg#Inter")
             format("svg"); /* Legacy iOS */
 }
+
+/* JetBrainsMono-Medium - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.eot"); /* IE9 Compat Modes */
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.svg#JetBrainsMono-Medium")
+            format("svg"); /* Legacy iOS */
+}
+
+/* JetBrainsMono-Italic - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: normal;
+    font-style: italic;
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.eot"); /* IE9 Compat Modes */
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.svg#JetBrainsMono-Italic")
+            format("svg"); /* Legacy iOS */
+}
+
+/* JetBrainsMono-Bold - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-style: normal;
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.eot"); /* IE9 Compat Modes */
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.svg#JetBrainsMono-Bold")
+            format("svg"); /* Legacy iOS */
+}
+
+/* JetBrainsMono-Regular - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: normal;
+    font-style: normal;
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.eot"); /* IE9 Compat Modes */
+    src: url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.woff")
+            format("woff"),
+        /* Modern Browsers */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("/public/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.svg#JetBrainsMono-Regular")
+            format("svg"); /* Legacy iOS */
+}

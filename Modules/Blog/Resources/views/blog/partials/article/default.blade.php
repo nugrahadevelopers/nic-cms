@@ -89,10 +89,10 @@
                                         class="lg:bg-white dark:lg:bg-black/20 lg:border-l lg:border-r dark:border-slate-800/40 lg:p-6">
                                         <div
                                             class="prose-headings:scroll-mt-6 prose max-w-none [&>h3>a]:text-slate-800 [&>h3>a]:no-underline [&>h2>a]:text-blue-800 [&>h3>a]:dark:text-slate-100 [&>h2>a]:dark:text-slate-100 [&>h2>a]:no-underline prose-headings:mb-0.5 prose-img:border prose-img:border-slate-200 prose-img:shadow-sm prose-img:shadow-blue-500/10 prose-img:dark:border-blue-500/20 decoration-skip-ink prose-headings:text-slate-900 prose-a:text-blue-500 prose-a:underline prose-a:decoration-blue-500/30 prose-a:decoration-2 prose-a:underline-offset-[-1px] prose-img:rounded-lg dark:prose-invert dark:prose-headings:text-slate-100 prose-pre:bg-slate-900 dark:prose-pre:bg-slate-1000 prose-pre:border-slate-700 dark:prose-pre:border-slate-800 prose-pre:border prose-pre:overflow-x-auto w-full overflow-x-auto prose-pre:rounded-md">
-                                            <x-markdown theme="github-dark" class="">
-                                                {{-- {{ $post->content }} --}}
+                                            <x-markdown :highlight-code="false">
                                                 {!! $post->content !!}
                                             </x-markdown>
+                                            {{-- {{ Illuminate\Mail\Markdown::parse($post->content) }} --}}
                                         </div>
                                     </div>
                                     <section class="bg-white dark:bg-gray-900 py-8 px-6 lg:py-16">
