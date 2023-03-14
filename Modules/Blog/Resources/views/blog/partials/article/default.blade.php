@@ -19,7 +19,7 @@
             <h1 class="font-bold text-center text-2xl leading-relaxed">{{ $post->title }}</h1>
         </div>
         <div class="flex items-center justify-center gap-2 mt-4">
-            <p class="max-w-sm md:max-w-md font-light text-center text-gray-900 dark:text-gray-50 prose">
+            <p class="max-w-sm md:max-w-2xl font-light text-center text-gray-900 dark:text-gray-50 prose">
                 {{ $post->excerpt }}</p>
         </div>
         <div class="flex items-center justify-center gap-2 mt-5">
@@ -33,13 +33,17 @@
                         {{ $post->createdBy->name }}
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                        {{ $post->createdBy->bio }}
+                        {{ $post->createdBy->bio }} &#x2022;
+                        {{ \Carbon\Carbon::parse($post->getRawOriginal('post_date'))->translatedFormat(config('app.date_format_frontend_blog_post')) }}
+                        &#x2022;
+                        {{ $post->updated_at != null ? 'diubah ' . $post->updated_at->diffForHumans() : '' }}
                     </p>
                 </div>
             </div>
         </div>
         <div class="flex items-center justify-center gap-2 mt-5">
-            <img class="md:rounded-lg" src="{{ $post->getFirstMediaUrl('featured_img') }}" alt="">
+            <img class="md:max-w-screen-xl md:rounded-lg" src="{{ $post->getFirstMediaUrl('featured_img') }}"
+                alt="">
         </div>
         <div class="text-white">
             <div class="grid grid-cols-12 max-w-screen-2xl mx-auto">
