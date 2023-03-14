@@ -1,0 +1,192 @@
+{
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.eot": {
+    "file": "assets/inter-v12-latin-100-e071a6c2.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.eot": {
+    "file": "assets/inter-v12-latin-200-b9837de3.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.eot": {
+    "file": "assets/inter-v12-latin-regular-23552565.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.eot": {
+    "file": "assets/inter-v12-latin-300-4a52ad59.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.eot": {
+    "file": "assets/inter-v12-latin-500-933d61b9.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.eot": {
+    "file": "assets/inter-v12-latin-600-8f0b8fa8.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.eot": {
+    "file": "assets/inter-v12-latin-700-d7f30778.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.eot": {
+    "file": "assets/inter-v12-latin-800-71ef00fb.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.eot": {
+    "file": "assets/inter-v12-latin-900-17392679.eot",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.eot"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.woff2": {
+    "file": "assets/inter-v12-latin-200-74885a0c.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.woff2": {
+    "file": "assets/inter-v12-latin-100-61cac109.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.woff2": {
+    "file": "assets/inter-v12-latin-300-6b2cee46.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.woff2": {
+    "file": "assets/inter-v12-latin-600-048d136d.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.woff2": {
+    "file": "assets/inter-v12-latin-700-ced2d8e0.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.woff2": {
+    "file": "assets/inter-v12-latin-800-a51ac27d.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.woff2": {
+    "file": "assets/inter-v12-latin-500-d5333670.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.woff2": {
+    "file": "assets/inter-v12-latin-regular-0364d368.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.woff2": {
+    "file": "assets/inter-v12-latin-900-f2db7f82.woff2",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.woff2"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.woff": {
+    "file": "assets/inter-v12-latin-200-3df10d85.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.woff": {
+    "file": "assets/inter-v12-latin-100-8b9e4e8a.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.woff": {
+    "file": "assets/inter-v12-latin-300-48602fcd.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.woff": {
+    "file": "assets/inter-v12-latin-700-51df444d.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.woff": {
+    "file": "assets/inter-v12-latin-600-22b2f9fb.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.woff": {
+    "file": "assets/inter-v12-latin-800-d08d7178.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.woff": {
+    "file": "assets/inter-v12-latin-500-2514f3df.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.woff": {
+    "file": "assets/inter-v12-latin-regular-3ea830d4.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.ttf": {
+    "file": "assets/inter-v12-latin-200-c16f10e3.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.ttf": {
+    "file": "assets/inter-v12-latin-100-c259d514.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.woff": {
+    "file": "assets/inter-v12-latin-900-c38e95e0.woff",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.woff"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.ttf": {
+    "file": "assets/inter-v12-latin-300-f606adf3.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.ttf": {
+    "file": "assets/inter-v12-latin-700-ece77e5d.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.ttf": {
+    "file": "assets/inter-v12-latin-600-28dc4d8d.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.ttf": {
+    "file": "assets/inter-v12-latin-800-baf91ad6.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.ttf": {
+    "file": "assets/inter-v12-latin-regular-e06400c3.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.ttf": {
+    "file": "assets/inter-v12-latin-500-502bc7b6.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.ttf": {
+    "file": "assets/inter-v12-latin-900-b496b2f4.ttf",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.ttf"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.svg": {
+    "file": "assets/inter-v12-latin-200-53bf691a.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-200.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.svg": {
+    "file": "assets/inter-v12-latin-100-c5b53ff4.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-100.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.svg": {
+    "file": "assets/inter-v12-latin-700-1328ff4a.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-700.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.svg": {
+    "file": "assets/inter-v12-latin-800-f82fd0b0.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-800.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.svg": {
+    "file": "assets/inter-v12-latin-300-813acefb.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-300.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.svg": {
+    "file": "assets/inter-v12-latin-600-b73dbfac.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-600.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.svg": {
+    "file": "assets/inter-v12-latin-500-2c1f242b.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-500.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.svg": {
+    "file": "assets/inter-v12-latin-regular-ff2d9a1c.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-regular.svg"
+  },
+  "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.svg": {
+    "file": "assets/inter-v12-latin-900-82c48cf1.svg",
+    "src": "public/assets/fonts/inter-v12-latin/inter-v12-latin-900.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-01eed0d1.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-fe5e93e3.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

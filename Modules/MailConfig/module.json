@@ -1,0 +1,11 @@
+{
+    "name": "MailConfig",
+    "alias": "mailconfig",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MailConfig\\Providers\\MailConfigServiceProvider"
+    ],
+    "files": []
+}
