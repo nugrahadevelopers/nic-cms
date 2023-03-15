@@ -362,6 +362,12 @@
 
 @tailwind utilities;
 
+@layer utilities {
+    .prose :where(iframe):not(:where([class~="not-prose"] *)) {
+        @apply aspect-video w-full h-auto rounded-lg;
+    }
+}
+
 * {
     @apply transition-colors duration-300;
 }
