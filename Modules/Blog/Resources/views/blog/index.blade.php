@@ -1,4 +1,11 @@
 <x-blog-front-layout>
+    <x-slot name="seoTitle">{{ config('app.name') }}</x-slot>
+    <x-slot name="seoKeyword">laravel tutorial</x-slot>
+    <x-slot name="seoDescription">Hello welcome to my blog, build with my own cms</x-slot>
+    <x-slot name="seoType">article</x-slot>
+    <x-slot name="seoImg">{{ asset('assets/img/unnamed.jpg') }}</x-slot>
+    <x-slot name="seoUrl">{{ config('app.url') }}</x-slot>
+
     <div class="min-h-screen bg-gray-200 dark:bg-gray-800">
         <div class="min-h-screen flex flex-col lg:flex-row">
             <div
@@ -86,7 +93,7 @@
                         @foreach ($popularPosts as $post)
                             <a href="{{ route('front.blog.article', $post->slug) }}"
                                 style="background-image: url('{{ $post->getFirstMediaUrl('featured_img') }}')"
-                                class="bg-no-repeat bg-center flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden">
+                                class="mb-4 bg-no-repeat bg-center flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 overflow-hidden">
                                 <div
                                     class="flex flex-col justify-between p-4 leading-normal bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-900 bg-opacity-90 dark:bg-opacity-90">
                                     <div class="text-xs text-gray-700 dark:text-gray-400">

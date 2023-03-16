@@ -49,7 +49,7 @@
                                     @csrf
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault(); this.closest('form').submit();"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Keluar</a>
+                                        class="block px-4 py-2 text-sm text-rose-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-rose-400 dark:hover:text-rose-500">Keluar</a>
                                 </form>
                             </li>
                         </ul>
@@ -92,7 +92,7 @@
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kategori</a>
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Topik</a>
                 </li>
             </ul>
         </div>
