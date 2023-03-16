@@ -16,6 +16,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     require __DIR__ . '/panel/admin/user.php';
     require __DIR__ . '/panel/admin/profile.php';
     require __DIR__ . '/panel/admin/role.php';
+    require __DIR__ . '/panel/admin/sitemap.php';
 });
 
 // Route untuk auth

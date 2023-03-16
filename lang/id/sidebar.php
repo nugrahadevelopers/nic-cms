@@ -21,5 +21,6 @@ return [
     'settings' => [
         'parent' => 'Pengaturan App',
         'telescope' => 'Telescope',
+        'generate_sitemap' => 'Generate Sitemap',
     ]
 ];

@@ -215,5 +215,8 @@ return [
             'mailconfig_mailtest_detail',
             'mailconfig_mailtest_delete'
         ],
+        'module_sitemap' => [
+            'generate_sitemap',
+        ],
     ]
 ];

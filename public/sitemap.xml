@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>http://niccms.test/</loc>
+        <lastmod>2023-03-16T10:47:34+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+    <url>
+        <loc>http://niccms.test/register</loc>
+        <lastmod>2023-03-16T10:47:35+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+    <url>
+        <loc>http://niccms.test/login</loc>
+        <lastmod>2023-03-16T10:47:35+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+    <url>
+        <loc>http://niccms.test/blog</loc>
+        <lastmod>2023-03-16T10:47:36+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+    <url>
+        <loc>http://niccms.test/forgot-password</loc>
+        <lastmod>2023-03-16T10:47:37+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+    <url>
+        <loc>http://niccms.test/blog/article/apa-yang-baru-di-laravel-10-dan-ekosistem-nya</loc>
+        <lastmod>2023-03-16T10:47:39+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        </url>
+</urlset>

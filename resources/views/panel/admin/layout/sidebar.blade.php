@@ -67,11 +67,16 @@
                 </x-sidebar-dropdown>
             @endcanany
             @canany(['user_show', 'role_show'])
-                <x-sidebar-dropdown label="{{ __('sidebar.settings.parent') }}" :active="request()->is('telescope')"
+                <x-sidebar-dropdown label="{{ __('sidebar.settings.parent') }}" :active="request()->is('telescope') || request()->routeIs('admin.sitemap.index')"
                     icon="fa-solid fa-screwdriver-wrench">
                     @can('user_show')
                         <x-sidebar-dropdown-link href="telescope" target="_blank" :active="request()->is('telescope')">
                             {{ __('sidebar.settings.telescope') }}
+                        </x-sidebar-dropdown-link>
+                    @endcan
+                    @can('generate_sitemap')
+                        <x-sidebar-dropdown-link href="{{ route('admin.sitemap.index') }}" :active="request()->routeIs('admin.sitemap.index')">
+                            {{ __('sidebar.settings.generate_sitemap') }}
                         </x-sidebar-dropdown-link>
                     @endcan
                 </x-sidebar-dropdown>
