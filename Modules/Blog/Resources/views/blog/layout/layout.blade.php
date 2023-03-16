@@ -56,6 +56,20 @@
     <link rel="stylesheet" href="{{ asset('assets/js/vendor/prism/prism.css') }}">
 
     @stack('css')
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-260812384-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-260812384-1');
+    </script>
 </head>
 
 <body class="font-sans antialiased">
