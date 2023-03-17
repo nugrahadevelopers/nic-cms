@@ -66,7 +66,10 @@
                                                     {{ $post->excerpt }}</p>
                                                 <div class="text-gray-700 dark:text-gray-400">
                                                     {{ \Carbon\Carbon::parse($post->getRawOriginal('post_date'))->translatedFormat(config('app.date_format_frontend_blog_post')) }}
-                                                    &#x2022; <span>{{ $post->visit_count_total }} <i
+                                                    &#x2022;
+                                                    {{ \App\Helpers\Helpers::estimateReadingTime($post->content)['minutes'] . ' menit baca' }}
+                                                    &#x2022;
+                                                    <span>{{ $post->visit_count_total }} <i
                                                             class="fa-solid fa-eye"></i></span> &#x2022;
                                                     <span>{{ $post->comments->count() }} <i
                                                             class="fa-solid fa-comments"></i></span>

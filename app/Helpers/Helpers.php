@@ -46,4 +46,23 @@ class Helpers
             }
         }
     }
+
+    /**
+     * Function to calculate the estimated reading time of the given text.
+     * 
+     * @param string $text The text to calculate the reading time for.
+     * @param string $wpm The rate of words per minute to use.
+     * @return Array
+     */
+    static function estimateReadingTime($text, $wpm = 200)
+    {
+        $totalWords = str_word_count(strip_tags($text));
+        $minutes = floor($totalWords / $wpm);
+        $seconds = floor($totalWords % $wpm / ($wpm / 60));
+
+        return array(
+            'minutes' => $minutes,
+            'seconds' => $seconds
+        );
+    }
 }

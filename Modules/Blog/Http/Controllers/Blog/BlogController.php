@@ -2,6 +2,7 @@
 
 namespace Modules\Blog\Http\Controllers\Blog;
 
+use App\Helpers\Helpers;
 use Embed\Embed;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
@@ -79,9 +80,11 @@ class BlogController extends Controller
             ],
         ];
 
+        $postReadTime = Helpers::estimateReadingTime($post->content);
         $postContent = app(MarkdownRenderer::class)->commonmarkOptions($cMarkOptions)->disableHighlighting()->toHtml($post->content);
         return view('blog::blog.partials.article.default', [
             'post' => $post,
+            'postReadTime' => $postReadTime,
             'postContent' => $postContent,
         ]);
     }

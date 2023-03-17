@@ -15,10 +15,10 @@
                     {{ $category->name }}</h5>
             @endforeach
         </div>
-        <div class="text-gray-900 dark:text-white flex items-center justify-center gap-2 mt-4">
+        <div class="text-gray-900 dark:text-white flex items-center justify-center gap-2 mt-4 px-2 lg:px-0">
             <h1 class="font-bold text-center text-2xl leading-relaxed">{{ $post->title }}</h1>
         </div>
-        <div class="flex items-center justify-center gap-2 mt-4">
+        <div class="flex items-center justify-center gap-2 mt-4 px-2 lg:px-0">
             <p class="max-w-sm md:max-w-2xl font-light text-center text-gray-900 dark:text-gray-50 prose">
                 {{ $post->excerpt }}</p>
         </div>
@@ -33,15 +33,13 @@
                         {{ $post->createdBy->name }}
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                        {{ $post->createdBy->bio }} &#x2022;
                         {{ \Carbon\Carbon::parse($post->getRawOriginal('post_date'))->translatedFormat(config('app.date_format_frontend_blog_post')) }}
-                        &#x2022;
-                        {{ $post->updated_at != null ? 'diubah ' . $post->updated_at->diffForHumans() : '' }}
+                        &#x2022; {{ $postReadTime['minutes'] . ' menit baca' }}
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center gap-2 mt-5">
+        <div class="flex items-center justify-center gap-2 mt-5 mb-5">
             <img class="md:max-w-screen-xl md:rounded-lg" src="{{ $post->getFirstMediaUrl('featured_img') }}"
                 alt="">
         </div>
@@ -96,7 +94,7 @@
                                             {!! $postContent !!}
                                         </div>
                                     </div>
-                                    <section class="bg-white dark:bg-gray-900 py-8 px-6 lg:py-16">
+                                    <section class="bg-white dark:bg-gray-900 py-8 px-2 lg:px-6 lg:py-16">
                                         <div class="">
                                             <div class="flex justify-between items-center mb-6">
                                                 <h2 class="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">
