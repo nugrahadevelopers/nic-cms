@@ -29,13 +29,21 @@ Website ini berperan sebagai aplikasi CMS sebagaimana mestinya yang masih dikemb
     -   Tambah, Update dan Delete Data Kategori
     -   Tambah, Update dan Delete Data Tag
     -   Tambah, Update dan Delete Data Post / Artikel
+    -   Generate Konten Post dengan OPEN AI
+    -   Simple SEO Meta
+    -   Integrasi dengan Google Analytics
 -   Modul Konfigurasi Email
     -   Konfigurasi SMTP
     -   Test Kirim Email
 -   Modul User
     -   Tambah, Update dan Delete Data User
     -   Tambah, Update dan Delete Data Role / Hak Akses
+-   Extra Artisan Command
+    -   Membuat Trait
+    -   Membuat Repository (Masih dalam pengembangan)
+    -   Membuat Service (Masih dalam pengembangan)
 -   Dan masih banyak lagi yang akan dikembangkan.
+
 <p></p>
 
 <h2 id="demo">Halaman Demo</h2>
@@ -60,7 +68,7 @@ Berikut adalah daftar layanan dan aplikasi yang wajib dan diperlukan selama anda
 
 -   PHP 8.1.x & Web Server [XAMPP, LAMPP, MAMP, Laragon(Rekomendasi)]
 -   Web Browser [Chrome, Firefox, Safari & Opera]
--   Internet [Sebagian besar / hampir semua plugin tambahan yang di perlukan disimpan di local internet hampir tidak di perlukan untuk testing di local]
+-   Internet [Sebagian besar / hampir semua plugin tambahan yang di perlukan disimpan di local, internet hampir tidak di perlukan untuk testing di local]
 
 <p></p>
 
@@ -91,7 +99,8 @@ $ php artisan key:generate
 # lalu jangan lupa untuk mengganti variable DB_DATABASE di file .env yang di folder project
 $ php artisan migrate:fresh --seed
 
-# Lalu jalankan aplikasi kalian dengan command dibawah
+# Pada pengguna Laragon untuk menjalankan aplikasi cukup dengan mengetikan url namaproject.test di browser
+# Jalankan aplikasi kalian dengan command dibawah jika menggunakan web server local lain
 $ php artisan serve
 
 # Selamat aplikasi dapat anda nikmati di local!
