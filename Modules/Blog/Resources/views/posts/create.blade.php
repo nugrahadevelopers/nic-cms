@@ -17,7 +17,11 @@
                         </x-form-input-textarea>
                     </div>
                     <div class="flex flex-col col-span-2 z-50">
-                        <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Konten</span>
+                        <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Konten |
+                            <button id="auto-generate-content-btn"
+                                data-url="{{ url('/admin/blog/posts/generate-content-with-open-ai?prompt=') }}"
+                                type="button" class="hover:underline">Minta Bantuan
+                                AI</button></span>
                         <div id="post-content-editor" class="rounded-lg overflow-hidden">
                             <textarea name="content" id="content" style="display: none"></textarea>
                         </div>

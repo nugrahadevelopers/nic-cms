@@ -157,3 +157,28 @@ $("#post-comment-status").on("change", function () {
         $(this).attr("value", 0);
     }
 });
+
+$("#auto-generate-content-btn").on("click", function () {
+    if ($("#title").val()) {
+        $.ajax({
+            url:
+                $("#auto-generate-content-btn").attr("data-url") +
+                $("#title").val(),
+            type: "GET",
+            beforeSend: function () {
+                $(".ajax-loading").show();
+            },
+        }).done(function (response) {
+            $(".ajax-loading").hide();
+            setTimeout(function () {
+                postContentEditor.setValue(response);
+            }, 2000);
+        });
+    } else {
+        ToastError.fire({
+            icon: "error",
+            title: "Terjadi Kesalahan!",
+            text: "Buat judul terlebih dahulu.",
+        });
+    }
+});

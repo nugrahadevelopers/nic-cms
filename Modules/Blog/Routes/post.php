@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Modules\Blog\Http\Controllers\Post\PostController;
 use Modules\Blog\Http\Controllers\Post\PostDatatableController;
+use Modules\Blog\Http\Controllers\Post\PostOpenAIController;
 use Modules\Blog\Http\Controllers\Post\PostSelect2Controller;
 
 Route::get('/posts', [PostController::class, 'index'])->name('admin.blog.posts.index');
@@ -12,6 +13,8 @@ Route::post('/posts/upload-content-img', [PostController::class, 'uploadContentI
 Route::get('/posts/edit/{post}', [PostController::class, 'edit'])->name('admin.blog.posts.edit');
 Route::put('/posts/edit/{post}', [PostController::class, 'update']);
 Route::delete('/posts/delete/{post}', [PostController::class, 'destroy'])->name('admin.blog.posts.delete');
+
+Route::get('/posts/generate-content-with-open-ai', [PostOpenAIController::class, 'generate']);
 
 // Datatable
 Route::get('/posts/table', [PostDatatableController::class, 'table'])->name('admin.blog.posts.table');

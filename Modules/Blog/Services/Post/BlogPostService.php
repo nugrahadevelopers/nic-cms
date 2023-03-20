@@ -6,14 +6,17 @@ use App\Helpers\Helpers;
 use Illuminate\Support\Facades\DB;
 use Modules\Blog\Entities\Post;
 use Modules\Blog\Repositories\Post\PostInterface;
+use OpenAI\Client;
 
 class BlogPostService
 {
     private $postInterface;
+    private $openAIClient;
 
-    public function __construct(PostInterface $postInterface)
+    public function __construct(PostInterface $postInterface, Client $openAIClient)
     {
         $this->postInterface = $postInterface;
+        $this->openAIClient = $openAIClient;
     }
 
     public function get()
@@ -26,6 +29,27 @@ class BlogPostService
     {
         $result = $this->postInterface->popular();
         return $result;
+    }
+
+    public function generateContentWithOpenAI(string $prompt)
+    {
+        $response = $this->openAIClient->chat()->create([
+            'model' => 'gpt-3.5-turbo',
+            'messages' => [
+                [
+                    'role' => 'system',
+                    'content' => 'Kamu adalah penulis artikel profesional.'
+                ],
+                [
+                    'role' => 'user',
+                    'content' => 'Buatkan artikel dengan topik ' . $prompt . ' hasilnya berupa markdown'
+                ]
+            ],
+            'max_tokens' => 1500,
+            'temperature' => 0.5,
+        ]);
+
+        return $response['choices'][0]['message']['content'];
     }
 
     public function createPost(array $data)

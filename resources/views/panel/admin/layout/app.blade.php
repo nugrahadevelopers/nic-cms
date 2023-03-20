@@ -51,6 +51,27 @@
 
     {{-- Select2 --}}
     <link rel="stylesheet" href="{{ asset('assets/js/vendor/select2/css/select2.min.css') }}">
+
+    <style>
+        .ajax-loading {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, .8) url({{ asset('assets/img/default-loading.gif') }}) 50% 50% no-repeat;
+        }
+
+        body.loading .ajax-loading {
+            overflow: hidden;
+        }
+
+        body.loading .ajax-loading {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="text-sm font-sans antialiased" data-alert="{{ Session::has('alert') ? 'true' : 'false' }}"
@@ -91,7 +112,10 @@
             @include('panel.admin.layout.footer')
             <!--   end::Footer     -->
         </div>
+
     </div>
+
+    <div class="ajax-loading"></div>
 
     {{-- jQuery --}}
     <script src="{{ asset('assets/js/vendor/jquery/jquery-3.6.3.min.js') }}"></script>
