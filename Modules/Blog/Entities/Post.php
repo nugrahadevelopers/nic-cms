@@ -100,6 +100,18 @@ class Post extends Model implements HasMedia, CanVisit
         return $this->hasMany(Comment::class);
     }
 
+    public function likes()
+    {
+        return $this->morphMany(Like::class, 'likeable');
+    }
+
+    public function scopeIsLiked($query, $user_id)
+    {
+        return $query->whereRelation('likes', function ($query) use ($user_id) {
+            $query->where('user_id', $user_id);
+        })->exists();
+    }
+
     protected function postDate(): Attribute
     {
         return Attribute::make(

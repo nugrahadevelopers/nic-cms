@@ -14,5 +14,6 @@ Route::group(['prefix' => 'blog'], function () {
 
     Route::group(['middleware' => ['auth']], function () {
         require __DIR__ . '/comment.php';
+        require __DIR__ . '/like.php';
     });
 });

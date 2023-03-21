@@ -26,6 +26,21 @@ class Helpers
     }
 
     /**
+     * Send array and message.
+     * @return array
+     */
+    static function sendArrayReturn($success = true, $message = '', $data = null)
+    {
+        $response = array(
+            'success' => $success,
+            'message' => $message,
+            'data' => $data,
+        );
+
+        return $response;
+    }
+
+    /**
      * Get SMTP configuration from database if MailConfig Module was enabled.
      */
     static function mailConfig()

@@ -15,6 +15,8 @@ use Modules\Blog\Repositories\Category\CategoryInterface;
 use Modules\Blog\Repositories\Category\CategoryRepository;
 use Modules\Blog\Repositories\Comment\CommentInterface;
 use Modules\Blog\Repositories\Comment\CommentRepository;
+use Modules\Blog\Repositories\Like\LikeInterface;
+use Modules\Blog\Repositories\Like\LikeRepository;
 use Modules\Blog\Repositories\Post\PostInterface;
 use Modules\Blog\Repositories\Post\PostRepository;
 use Modules\Blog\Repositories\Tag\TagInterface;
@@ -60,10 +62,12 @@ class BlogServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+
         $this->app->bind(CategoryInterface::class, CategoryRepository::class);
         $this->app->bind(TagInterface::class, TagRepository::class);
         $this->app->bind(PostInterface::class, PostRepository::class);
         $this->app->bind(CommentInterface::class, CommentRepository::class);
+        $this->app->bind(LikeInterface::class, LikeRepository::class);
     }
 
     /**

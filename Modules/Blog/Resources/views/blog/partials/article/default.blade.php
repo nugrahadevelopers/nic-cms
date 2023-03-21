@@ -50,36 +50,31 @@
                         <section class="sm:col-span-12 sm:col-start-2">
                             <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
                                 <div class="hidden lg:col-span-1 lg:block">
-                                    <section class="sticky top-10 mt-0 py-12 print:hidden">
+                                    <section class="sticky top-0 py-8 print:hidden">
                                         <div class="flex flex-col items-center">
-                                            <div>
-                                                <button
-                                                    class="flex flex-col items-center gap-x-4 gap-y-2.5 text-slate-900">
-                                                    <i
-                                                        class="fa-solid fa-hands-clapping text-slate-400 hover:text-orange-400 h-6 w-6 fade"></i>
-                                                    <span
-                                                        class="text-base font-medium leading-none dark:text-white">0</span>
-                                                </button>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center gap-y-5">
+                                            <div class="flex flex-col items-center gap-y-5">
                                                 <div class="text-center">
                                                     <h4
                                                         class="inline font-semibold uppercase text-sky-500 drop-shadow shadow-sky-500/50">
-                                                        BAGIKAN
+                                                        Bagikan Ke
                                                     </h4>
                                                     <div class="flex flex-col items-center gap-y-4 mt-4 gap-2">
-                                                        <a href="JavaScript:newPopupWindow('https://www.facebook.com/sharer/sharer.php?u={{ route('front.blog.article', $post) }}');"
+                                                        <button
+                                                            onclick="newPopupWindow('https://www.facebook.com/sharer/sharer.php?u={{ route('front.blog.article', $post) }}')"
                                                             class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#3b5998] hover:bg-[#334b81]"><i
-                                                                class="fa-brands fa-facebook-f"></i></a>
-                                                        <a href="JavaScript:newPopupWindow('https://twitter.com/intent/tweet?text=coba baca ini&amp;url={{ route('front.blog.article', $post) }}');"
+                                                                class="fa-brands fa-facebook-f"></i></button>
+                                                        <button
+                                                            onclick="newPopupWindow('https://twitter.com/intent/tweet?text=coba baca ini&amp;url={{ route('front.blog.article', $post) }}');"
                                                             class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#00aced] hover:bg-[#1891bd]"><i
-                                                                class="fa-brands fa-twitter"></i></a>
-                                                        <a href="JavaScript:newPopupWindow('https://www.linkedin.com/sharing/share-offsite/?url={{ route('front.blog.article', $post) }}');"
+                                                                class="fa-brands fa-twitter"></i></button>
+                                                        <button
+                                                            onclick="newPopupWindow('https://www.linkedin.com/sharing/share-offsite/?url={{ route('front.blog.article', $post) }}');"
                                                             class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#007fb1] hover:bg-[#0a739d]"><i
-                                                                class="fa-brands fa-linkedin-in"></i></a>
-                                                        <a href="JavaScript:newPopupWindow('https://wa.me/?text={{ route('front.blog.article', $post) }}');"
+                                                                class="fa-brands fa-linkedin-in"></i></button>
+                                                        <button
+                                                            onclick="newPopupWindow('https://wa.me/?text={{ route('front.blog.article', $post) }}');"
                                                             class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#25d366] hover:bg-[#21bf5b]"><i
-                                                                class="fa-brands fa-whatsapp"></i></a>
+                                                                class="fa-brands fa-whatsapp"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -92,6 +87,58 @@
                                         <div
                                             class="prose-headings:scroll-mt-6 prose max-w-none [&>h3>a]:text-slate-800 [&>h3>a]:no-underline [&>h2>a]:text-blue-800 [&>h3>a]:dark:text-slate-100 [&>h2>a]:dark:text-slate-100 [&>h2>a]:no-underline prose-headings:mb-0.5 prose-img:border prose-img:border-slate-200 prose-img:shadow-sm prose-img:shadow-blue-500/10 prose-img:dark:border-blue-500/20 decoration-skip-ink prose-headings:text-slate-900 prose-a:text-blue-500 prose-a:underline prose-a:decoration-blue-500/30 prose-a:decoration-2 prose-a:underline-offset-[-1px] prose-img:rounded-lg dark:prose-invert dark:prose-headings:text-slate-100 prose-pre:bg-slate-900 dark:prose-pre:bg-slate-1000 prose-pre:border-slate-700 dark:prose-pre:border-slate-800 prose-pre:border prose-pre:overflow-x-auto w-full overflow-x-auto prose-pre:rounded-md prose-th:bg-blue-500 prose-th:dark:bg-blue-600 prose-th:text-white prose-th:font-sans prose-th:p-2 prose-th:text-center prose-table:border prose-table:dark:border-gray-700 prose-table:table-auto prose-td:p-2">
                                             {!! $postContent !!}
+                                        </div>
+                                        <div class="flex items-center gap-2 mt-10">
+                                            @foreach ($post->tags as $tag)
+                                                <h5
+                                                    class="font-semibold text-sm px-2 py-1 text-gray-800 bg-gray-600/50 dark:text-gray-50 dark:bg-gray-600 rounded-md">
+                                                    {{ $tag->name }}</h5>
+                                            @endforeach
+                                        </div>
+                                        <div class="flex items-center gap-2 mt-10">
+                                            @auth
+                                                <button id="like-post-btn" type="button"
+                                                    data-status="{{ Auth::check() &&$post->likes()->where('user_id', auth()->user()->id)->exists()? 'liked': '' }}"
+                                                    data-url-like="{{ route('front.blog.like.post.like', $post) }}"
+                                                    data-url-unlike="{{ route('front.blog.like.post.unlike', $post) }}"
+                                                    class="text-gray-50 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
+                                                        id="post-likes-count"
+                                                        class="mr-2">{{ $post->likes->count() }}</span><i
+                                                        id="post-likes-icon"
+                                                        class="fa-solid fa-hands-clapping mr-2 @if (Auth::check() &&
+                                                                $post->likes()->where('user_id', auth()->user()->id)->exists()) text-rose-600 @endif"></i>
+                                                </button>
+                                            @else
+                                                <a href="{{ route('login') }}"
+                                                    class="text-gray-50 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
+                                                        class="mr-2">{{ $post->likes->count() }}</span><i
+                                                        class="fa-solid fa-hands-clapping mr-2"></i>
+                                                </a>
+                                            @endauth
+                                        </div>
+                                        <div
+                                            class="mt-5 py-4 border-t border-b border-gray-700 flex lg:hidden flex-col items-center justify-center">
+                                            <h4
+                                                class="inline font-semibold uppercase text-gray-50 drop-shadow shadow-sky-500/50 mb-2">
+                                                Bagikan Ke</h4>
+                                            <div class="grid grid-cols-4 gap-2">
+                                                <button
+                                                    onclick="newPopupWindow('https://www.facebook.com/sharer/sharer.php?u={{ route('front.blog.article', $post) }}')"
+                                                    class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#3b5998] hover:bg-[#334b81]"><i
+                                                        class="fa-brands fa-facebook-f"></i></button>
+                                                <button
+                                                    onclick="newPopupWindow('https://twitter.com/intent/tweet?text=coba baca ini&amp;url={{ route('front.blog.article', $post) }}');"
+                                                    class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#00aced] hover:bg-[#1891bd]"><i
+                                                        class="fa-brands fa-twitter"></i></button>
+                                                <button
+                                                    onclick="newPopupWindow('https://www.linkedin.com/sharing/share-offsite/?url={{ route('front.blog.article', $post) }}');"
+                                                    class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#007fb1] hover:bg-[#0a739d]"><i
+                                                        class="fa-brands fa-linkedin-in"></i></button>
+                                                <button
+                                                    onclick="newPopupWindow('https://wa.me/?text={{ route('front.blog.article', $post) }}');"
+                                                    class="p-2 w-8 h-8 flex items-center justify-center rounded-md bg-[#25d366] hover:bg-[#21bf5b]"><i
+                                                        class="fa-brands fa-whatsapp"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                     <section class="bg-white dark:bg-gray-900 py-8 px-2 lg:px-6 lg:py-16">

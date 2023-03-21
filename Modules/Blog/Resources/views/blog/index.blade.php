@@ -50,7 +50,8 @@
                                                 <div class="absolute top-2 right-2">
                                                     <div
                                                         class="text-white drop-shadow-md font-light text-xl hover:text-2xl transition-all ease-in-out delay-200">
-                                                        0 <i class="fa-solid fa-hands-clapping"></i>
+                                                        {{ $post->likes->count() }} <i
+                                                            class="fa-solid fa-hands-clapping"></i>
                                                     </div>
                                                 </div>
                                             </div>
