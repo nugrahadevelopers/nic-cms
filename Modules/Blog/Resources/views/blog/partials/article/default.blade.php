@@ -101,7 +101,7 @@
                                                     data-status="{{ Auth::check() &&$post->likes()->where('user_id', auth()->user()->id)->exists()? 'liked': '' }}"
                                                     data-url-like="{{ route('front.blog.like.post.like', $post) }}"
                                                     data-url-unlike="{{ route('front.blog.like.post.unlike', $post) }}"
-                                                    class="text-gray-50 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
+                                                    class="dark:text-gray-50 text-gray-900 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
                                                         id="post-likes-count"
                                                         class="mr-2">{{ $post->likes->count() }}</span><i
                                                         id="post-likes-icon"
@@ -110,7 +110,7 @@
                                                 </button>
                                             @else
                                                 <a href="{{ route('login') }}"
-                                                    class="text-gray-50 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
+                                                    class="dark:text-gray-50 text-gray-800 text-lg hover:scale-150 transition-all ease-in-out duration-300 after:scale-0 hover:after:scale-100 hover:after:content-['Apresiasi'] after:transition-all after:ease-in-out hover:after:duration-300 after:text-sm after:font-light"><span
                                                         class="mr-2">{{ $post->likes->count() }}</span><i
                                                         class="fa-solid fa-hands-clapping mr-2"></i>
                                                 </a>
