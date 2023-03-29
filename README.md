@@ -97,7 +97,10 @@ $ php artisan key:generate
 
 # Jangan lupa migrate database dengan cara membuat database di phpmyadmin atau aplikasi lainnya yang kalian pakai,
 # lalu jangan lupa untuk mengganti variable DB_DATABASE di file .env yang di folder project
-$ php artisan migrate:fresh --seed
+$ php artisan migrate
+
+# Lakukan seed untuk memasukan akun super admin, role dan permission
+$ php artisan db:seed --class=AppPermissionSeeder
 
 # Pada pengguna Laragon untuk menjalankan aplikasi cukup dengan mengetikan url namaproject.test di browser
 # Jalankan aplikasi kalian dengan command dibawah jika menggunakan web server local lain

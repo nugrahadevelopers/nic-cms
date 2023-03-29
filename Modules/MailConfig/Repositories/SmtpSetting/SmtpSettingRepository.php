@@ -15,6 +15,19 @@ class SmtpSettingRepository extends BaseRepository implements SmtpSettingInterfa
     public function getConfig()
     {
         $config = SmtpSetting::take(1)->first();
-        return $config;
+
+        if ($config) {
+            return $config;
+        } else {
+            return SmtpSetting::create([
+                'from_email_address' => 'hello@example.com',
+                'from_name' => config('app.name'),
+                'smtp_host' => 'mailhog',
+                'smtp_port' => '1025',
+                'type_of_encryption' => 1,
+                'smtp_username' => '',
+                'smtp_password' => '',
+            ]);
+        }
     }
 }

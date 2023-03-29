@@ -28,8 +28,8 @@ class AppPermissionSeeder extends Seeder
         ];
 
         $superAdminUser = User::create(array_merge([
-            'name' => 'Reno Nugraha',
-            'email' => 'reno@rn.com',
+            'name' => 'Super Admin',
+            'email' => 'admin@mail.com',
         ], $default_user_value));
 
         $superAdminRole              = Role::create(['name' => User::SUPERADMIN_ROLE]);

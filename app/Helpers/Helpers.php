@@ -51,13 +51,15 @@ class Helpers
                     return \Modules\MailConfig\Entities\SmtpSetting::getConfig()->first();
                 });
 
-                Config::set('mail.from.address', $smtpSetting->from_email_address);
-                Config::set('mail.from.name', $smtpSetting->from_name);
-                Config::set('mail.mailers.smtp.host', $smtpSetting->smtp_host);
-                Config::set('mail.mailers.smtp.port', $smtpSetting->smtp_port);
-                Config::set('mail.mailers.smtp.encryption', $smtpSetting->type_of_encryption);
-                Config::set('mail.mailers.smtp.username', $smtpSetting->smtp_username);
-                Config::set('mail.mailers.smtp.password', Crypt::decryptString($smtpSetting->smtp_password));
+                if ($smtpSetting) {
+                    Config::set('mail.from.address', $smtpSetting->from_email_address);
+                    Config::set('mail.from.name', $smtpSetting->from_name);
+                    Config::set('mail.mailers.smtp.host', $smtpSetting->smtp_host);
+                    Config::set('mail.mailers.smtp.port', $smtpSetting->smtp_port);
+                    Config::set('mail.mailers.smtp.encryption', $smtpSetting->type_of_encryption);
+                    Config::set('mail.mailers.smtp.username', $smtpSetting->smtp_username);
+                    Config::set('mail.mailers.smtp.password', Crypt::decryptString($smtpSetting->smtp_password));
+                }
             }
         }
     }

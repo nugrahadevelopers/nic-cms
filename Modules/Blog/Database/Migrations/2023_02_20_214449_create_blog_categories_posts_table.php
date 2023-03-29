@@ -21,7 +21,7 @@ return new class extends Migration
 
         Schema::table('blog_categories_posts', function (Blueprint $table) {
             $table->foreign('category_id')->references('id')->on('blog_categories');
-            $table->foreign('posts_id')->references('id')->on('blog_posts');
+            $table->foreign('post_id')->references('id')->on('blog_posts');
         });
     }
 
